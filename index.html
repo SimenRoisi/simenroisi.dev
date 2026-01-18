@@ -158,50 +158,32 @@
 
                 <div class="grid md:grid-cols-2 gap-12">
                     <!-- Bio & Journey -->
+                    <!-- Education -->
                     <div>
-                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">My Journey</h3>
-                        <div class="space-y-6 text-gray-600 leading-relaxed">
-                            <p>
-                                I hold a <strong>Master's degree in Autonomous Systems</strong> from the <span
-                                    class="text-primary font-medium">Technical University of Denmark (DTU)</span>, where
-                                I dove deep into Computer Vision, Robotics, and Deep Learning.
-                            </p>
-                            <p>
-                                Recently, I've pivoted my focus towards <strong>Backend Development</strong> and
-                                <strong>API Integrations</strong>. I love the challenge of building scalable, efficient
-                                systems that power seamless user experiences.
-                            </p>
-                            <p>
-                                I am currently looking for my first full-time role where I can leverage my engineering
-                                background and passion for code, to drive innovation.
-                            </p>
-                            <div class="pt-4">
-                                <h4 class="font-semibold text-gray-800 mb-4">Education</h4>
-                                <div class="space-y-6">
-                                    <!-- DTU -->
-                                    <div class="flex items-center gap-4">
-                                        <div
-                                            class="flex-shrink-0 w-12 h-12 bg-white rounded-lg p-1 flex items-center justify-center overflow-hidden">
-                                            <img src="assets/images/dtu-logo.png" alt="DTU Logo"
-                                                class="object-contain w-full h-full">
-                                        </div>
-                                        <div class="border-l-2 border-primary pl-4">
-                                            <p class="font-medium text-gray-900">M.Sc. Autonomous Systems</p>
-                                            <p class="text-sm text-gray-500">Technical University of Denmark</p>
-                                        </div>
-                                    </div>
-                                    <!-- UiS -->
-                                    <div class="flex items-center gap-4">
-                                        <div
-                                            class="flex-shrink-0 w-12 h-12 bg-white rounded-lg p-1 flex items-center justify-center overflow-hidden">
-                                            <img src="assets/images/uis-logo.png" alt="UiS Logo"
-                                                class="object-contain w-full h-full">
-                                        </div>
-                                        <div class="border-l-2 border-primary pl-4">
-                                            <p class="font-medium text-gray-900">BEng Electrical Engineering</p>
-                                            <p class="text-sm text-gray-500">University of Stavanger</p>
-                                        </div>
-                                    </div>
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Education</h3>
+                        <div class="space-y-6">
+                            <!-- DTU -->
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-white rounded-lg p-1 flex items-center justify-center overflow-hidden border border-gray-100 shadow-sm">
+                                    <img src="assets/images/dtu-logo.png" alt="DTU Logo"
+                                        class="object-contain w-full h-full">
+                                </div>
+                                <div class="border-l-2 border-primary pl-4">
+                                    <p class="font-medium text-gray-900">M.Sc. Autonomous Systems</p>
+                                    <p class="text-sm text-gray-500">Technical University of Denmark</p>
+                                </div>
+                            </div>
+                            <!-- UiS -->
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-white rounded-lg p-1 flex items-center justify-center overflow-hidden border border-gray-100 shadow-sm">
+                                    <img src="assets/images/uis-logo.png" alt="UiS Logo"
+                                        class="object-contain w-full h-full">
+                                </div>
+                                <div class="border-l-2 border-primary pl-4">
+                                    <p class="font-medium text-gray-900">BEng Electrical Engineering</p>
+                                    <p class="text-sm text-gray-500">University of Stavanger</p>
                                 </div>
                             </div>
                         </div>
@@ -380,8 +362,9 @@
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold text-gray-900 mb-2">Weather ETL API</h3>
                             <p class="text-gray-600 mb-4 text-sm flex-grow">
-                                An end-to-end data pipeline extracting weather data from yr.no and Open-Meteo,
-                                transforming it, and serving it via a FastAPI backend.
+                                "An automated ETL system ingesting multi-source weather data (yr.no, Open-Meteo),
+                                performing weighted aggregation, and persisting results to a database for access
+                                via a FastAPI service.
                             </p>
                             <div class="flex flex-wrap gap-2 mb-6">
                                 <span
