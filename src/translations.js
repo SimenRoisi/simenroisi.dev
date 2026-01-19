@@ -53,8 +53,8 @@ const translations = {
         nav_contact: "Kontakt meg",
         nav_contact_mobile: "Kontakt",
 
-        hero_role: "Programvareutvikler | AI & Autonome Systemer",
-        hero_greeting: "Hei, jeg er",
+
+        hero_greeting: "<span class='text-4xl md:text-5xl'>Hei, jeg er</span>",
         hero_bio: "Velkommen til min personlige portefølje. Her finner du en dypere gjennomgang av mine prosjekter og mitt tekniske arbeid – mer detaljert enn det du finner på CV-en eller GitHub.",
         hero_view_projects: "Se Prosjekter",
         hero_contact_me: "Kontakt Meg",
