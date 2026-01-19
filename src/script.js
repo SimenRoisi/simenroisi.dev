@@ -61,4 +61,55 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.observe(el);
         }
     });
+
+    // --- Translation Logic ---
+    const langToggleDesktop = document.getElementById('lang-toggle-desktop');
+    const langToggleMobile = document.getElementById('lang-toggle-mobile');
+
+    // Default language: Check localStorage or Browser, default to 'en'
+    let currentLang = localStorage.getItem('language') ||
+        (navigator.language.startsWith('no') ? 'no' : 'en');
+
+    // Function to update content
+    function setLanguage(lang) {
+        currentLang = lang;
+        localStorage.setItem('language', lang);
+
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            if (translations[lang] && translations[lang][key]) {
+                // If the element has children (like nested tags), we need to be careful.
+                // For this implementation, we assume text-only or simple inline tags replacable by HTML.
+                // Using innerHTML allows formatting (like &copy; or bold tags) to persist if formatted in JSON.
+                element.innerHTML = translations[lang][key];
+            }
+        });
+
+        // Optional: Update toggle button visual state if needed, 
+        // e.g., highlight current language. Currently it just says "🇳🇴 / 🇺🇸"
+    }
+
+    // Function to toggle language
+    function toggleLanguage() {
+        const newLang = currentLang === 'en' ? 'no' : 'en';
+        setLanguage(newLang);
+    }
+
+    // Initialize
+    setLanguage(currentLang);
+
+    // Event Listeners
+    if (langToggleDesktop) {
+        langToggleDesktop.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent link behavior if it was a link
+            toggleLanguage();
+        });
+    }
+
+    if (langToggleMobile) {
+        langToggleMobile.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleLanguage();
+        });
+    }
 });
