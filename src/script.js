@@ -66,9 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const langToggleDesktop = document.getElementById('lang-toggle-desktop');
     const langToggleMobile = document.getElementById('lang-toggle-mobile');
 
-    // Default language: Check localStorage or Browser, default to 'en'
-    let currentLang = localStorage.getItem('language') ||
-        (navigator.language.startsWith('no') ? 'no' : 'en');
+    // Default language: Check localStorage, otherwise default to 'no' (Norwegian)
+    let currentLang = localStorage.getItem('language') || 'no';
 
     // Function to update content
     function setLanguage(lang) {

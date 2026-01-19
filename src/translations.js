@@ -5,9 +5,8 @@ const translations = {
         nav_contact: "Contact Me",
         nav_contact_mobile: "Contact",
 
-        hero_role: "Software Engineer | AI & Autonomous Systems",
         hero_greeting: "Hi, I'm",
-        hero_bio: "I specialize in backend development, API integrations, and autonomous systems. With a background in Computer Vision and Robotics, I build robust systems that solve real-world problems.",
+        hero_bio: "Welcome to my personal portfolio. Here you'll find a curated collection of my selected projects. Links to both demo and source code can be found under each project.",
         hero_view_projects: "View Projects",
         hero_contact_me: "Contact Me",
 
@@ -41,9 +40,9 @@ const translations = {
 
 
         contact_title: "Get In Touch",
-        contact_desc: "I'm currently looking for new opportunities in backend development and engineering. If you have any questions feel free to contact me through any of the means below!",
 
-        footer_tagline: "Building software that matters.",
+
+
         footer_quicklinks: "Quick Links",
         footer_connect: "Connect",
         footer_copyright: "&copy; 2026 Simen Lynne Røisi. All rights reserved."
@@ -56,7 +55,7 @@ const translations = {
 
         hero_role: "Programvareutvikler | AI & Autonome Systemer",
         hero_greeting: "Hei, jeg er",
-        hero_bio: "Jeg spesialiserer meg på backend-utvikling, API-integrasjoner og autonome systemer. Med bakgrunn innen datasyn og robotikk bygger jeg robuste systemer som løser virkelige problemer.",
+        hero_bio: "Velkommen til min personlige portefølje. Her finner du en dypere gjennomgang av mine prosjekter og mitt tekniske arbeid – mer detaljert enn det du finner på CV-en eller GitHub.",
         hero_view_projects: "Se Prosjekter",
         hero_contact_me: "Kontakt Meg",
 
@@ -90,11 +89,8 @@ const translations = {
 
 
         contact_title: "Ta Kontakt",
-        contact_desc: "Jeg ser for tiden etter nye muligheter innen backend-utvikling og engineering. Hvis du har spørsmål, ta gjerne kontakt med meg via noen av kanalene nedenfor!",
-
-        footer_tagline: "Bygger programvare som betyr noe.",
         footer_quicklinks: "Snarveier",
-        footer_connect: "Koble til",
+        footer_connect: "Connect",
         footer_copyright: "&copy; 2026 Simen Lynne Røisi. Alle rettigheter reservert."
     }
 };
